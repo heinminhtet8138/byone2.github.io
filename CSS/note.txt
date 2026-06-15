@@ -1,0 +1,23 @@
+CSS - Cascading StyleSheet
+
+selector {
+    property : value;
+}
+
+မျက်နှာ {
+    foundation : tona;
+    သနပ်ခါး : ရှင်မတောင်;
+}
+
+hand {
+    skin-care : loation;
+}
+
+eye-makeup {
+    color : brown;
+}
+
+Three way to insert CSS 
+- Internal CSS 
+- External CSS 
+- Inline style 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Universal Selector  
+        document ထဲမှာရှိတဲ့ element အားလုံးကိုသက်ရောက်စေတယ် 
+        document တစ်ခုလုံးကိုသက်ရောက်စေတယ် 
+        */
+
+        * {
+            color: red;
+        }
+
+        /* Element Selector 
+            - tag name တွေကို select လုပ်တာ 
+            - ကိုယ် select လုပ်လိုက်တဲ့ element တွေအကုန်သက်ရောက်
+        */
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            background-color: aqua;
+        }
+
+        /* id selector  
+            - id ကို select လုပ်ရင် # နဲ့ select လုပ် 
+            - id attribute ရဲ့ value name ကို select လုပ်
+            - id attribute ရှိတဲ့ element တစ်ခုသာသက်ရောက် 
+        */
+        #nose {
+            background-color: pink;
+            font-size: 30px;
+        }
+
+        #p-id {
+            background-color: red;
+            color: black;
+        }
+
+        #id-selector {
+            background-color: yellow;
+        }
+
+        /* class selector 
+            - class ကို select လုပ်မယ်ဆိုရင် . နဲ့ select လုပ်
+            - class attribut ထဲမှာရှိတဲ့ value name ကို select
+        */
+
+        .eye-makeup {
+            background-color: black;
+            color: white;
+        }
+
+        /* Attribute */
+        input[type="email"] {
+            background-color: brown;
+        }
+
+        /* Descendant Selector 
+            အောက်ပါ ဉပမာ အရ div ထဲမှာ ရှိတဲ့ p element အားလုံးကိုအလုပ်လုပ် 
+        */
+
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child Selector 
+            အောက်ပါ ဉပမာ အရ div ရဲ့ child ဖြစ်တဲ့ p element အားလုံးကို အလုပ်လုပ်
+            child မဟုတ်တဲ့ span ထဲက p element ကိုအလုပ်မလုပ် 
+        */
+        div>p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selector Lesson</h1>
+    <p>Universal Selector</p>
+    <p>Hello CSS</p>
+    <p id="nose">Nose</p>
+    <p id="p-id">This is p id.</p>
+    <p id="id-selector">This is ID selector</p>
+    <p class="eye-makeup">Left Eye</p>
+    <p class="eye-makeup">Right Eye</p>
+
+    <input type="text" name="" id="">
+    <input type="email" name="" id="">
+    <input type="number" name="" id="">
+
+    <div>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <span>
+            <p>This is paragraph 4.</p>
+        </span>
+    </div>
+</body>
+</html>
