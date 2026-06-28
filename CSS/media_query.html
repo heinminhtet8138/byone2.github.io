@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            padding: 20px;
+        }
+
+        .card-item {
+            background-color: #0f0;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 9px;
+            font-size: 1.875rem;
+        }
+
+        /* @media meditype and (condition) {
+            css code 
+        } 
+            mediaktype - 
+            all
+            screen - computer, tablet, phone  
+            print
+            speech  
+
+            phone - max-width: 767px;
+            tablet - min-width: 768px to max-width: 1023px;
+            computer - min-width:1024px 
+        */
+        /* for computer screen  */
+        @media screen and (min-width:1024px) {
+            .card {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+        /* for tablet screen */
+        @media screen and (min-width: 768px) and (max-width:1023px) {
+            .card {
+               display: grid;
+               grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        /* for phone screen */
+        @media screen and (max-width:767px) {
+            .card {
+                display: grid;
+                grid-template-columns: 1fr;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-item">Card 1</div>
+            <div class="card-item">Card 2</div>
+            <div class="card-item">Card 3</div>
+            <div class="card-item">Card 4</div>
+            <div class="card-item">Card 5</div>
+        </div>
+    </div>
+</body>
+</html>
